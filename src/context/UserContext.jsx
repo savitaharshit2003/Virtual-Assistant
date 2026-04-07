@@ -37,7 +37,7 @@ function UserContext({ children }) {
       speak(cleanText + '\n' + text);
     } catch (err) {
       if (err.message?.includes("429")) {
-        setPrompt("Aivon is resting. Try again in 30 seconds 🙂");
+        setPrompt("Aivon is resting. Try again in 30 seconds🙂");
         setMode("idle");
         return;
       }
