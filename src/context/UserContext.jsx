@@ -24,7 +24,7 @@ function UserContext({ children }) {
 
   async function aiResponse(userText) {
     const now = Date.now();
-    if (now - lastCallTime.current < 5000) return;
+    if (now - lastCallTime.current <5000) return;
     lastCallTime.current = now;
 
     const cleanText = userText.replace(/\*/g, "").replace(/google/gi, "Ishu");
